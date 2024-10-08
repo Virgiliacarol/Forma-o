@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Catálogo de Vídeos</title>
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Vídeos</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="video-gallery">
+            <article class="video-item">
+                <h2>Título do Vídeo 1</h2>
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <p>Descrição do vídeo 1. Aqui você pode adicionar detalhes sobre o conteúdo.</p>
+            </article>
+            <article class="video-item">
+                <h2>Título do Vídeo 2</h2>
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <p>Descrição do vídeo 2. Informações sobre o que o vídeo aborda.</p>
+            </article>
+            <article class="video-item">
+                <h2>Título do Vídeo 3</h2>
+                <video controls>
+                    <source src="video3.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <p>Descrição do vídeo 3. Dicas e informações relevantes.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Catálogo de Vídeos</p>
+    </footer>
+</body>
+</html>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.video-item {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .video-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
